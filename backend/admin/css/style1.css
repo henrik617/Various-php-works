@@ -1,0 +1,117 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font: 14px/1.4 Georgia, Serif; 
+}
+#page-wrap {
+	margin: 50px;
+}
+p {
+	margin: 20px 0; 
+}
+
+label {display:block;}
+textarea { 
+	display:block;
+	font-family: inherit;
+	font-size: 16px;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:2px;
+}
+
+.submit_button{
+	color: #000000;
+	background: #FFCC00;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	border-radius: 4px;
+	padding: 10px 20px;
+		margin-left:20px;
+}
+
+.logout{
+	float:right;
+}
+.submit_button:hover{
+	border-color: #444444;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+	padding:10px;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+}
+th { 
+	background: #333; 
+	color: white; 
+	font-weight: bold; 
+}
+td, th { 
+	padding: 6px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+.success {
+	color: green;
+}
+.error {
+	color: red;
+}
+#FSForm{
+	margin:50px;
+}
+
+.block1
+{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.block2
+{
+    min-width: 450px;
+    display: table-cell;
+    float: right;
+}
+.block-container{
+	display:table;
+	margin-bottom:10px;
+}
